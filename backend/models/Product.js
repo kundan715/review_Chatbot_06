@@ -2,12 +2,9 @@
 
 const mongoose = require("mongoose");
 
-// products are pre loaded by seed script, users cant create them
+// i removed custom _id field, mongoose will auto generate objectid now
+// this is needed because Review.js references productId as ObjectId
 const productSchema = new mongoose.Schema({
-  _id: {
-    type: String, // i use custom string ids like "p1", "p2" instead of auto objectId
-  },
-
   name: {
     type: String,
     required: true,
