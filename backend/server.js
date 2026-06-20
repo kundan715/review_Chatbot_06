@@ -32,9 +32,9 @@ app.get("/", (req, res) => {
 
 // Routes — i  will uncomment these as i  build them
 app.use("/auth", require("./routes/authRoutes"));
-// app.use("/products", require("./routes/productRoutes"));
-// app.use("/reviews", require("./routes/reviewRoutes"));
-// app.use("/chat", require("./routes/chatRoutes"));
+app.use("/products", require("./routes/productRoutes"));
+app.use("/reviews", require("./routes/reviewRoutes"));
+app.use("/chat", require("./routes/chatRoutes"));
 
 const PORT = process.env.PORT || 5000;
 
