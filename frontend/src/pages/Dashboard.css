@@ -1,0 +1,72 @@
+/* frontend/src/pages/Dashboard.css */
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.dashboard-subtitle {
+  color: var(--text-muted);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.product-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-color: var(--border);
+}
+
+.product-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.product-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-brand {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.product-category-badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  background: var(--bg-input);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.product-cta {
+  margin-top: 1.2rem;
+  font-size: 0.82rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.error-card {
+  border-color: var(--error);
+  text-align: center;
+}
+
+.retry-btn {
+  margin-top: 1rem;
+}
