@@ -20,9 +20,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173", // React frontend URL
+  origin: "https://review-chatbot-06.vercel.app/",
   credentials: true
 }));
+
 app.use(express.json()); // Parse incoming JSON request bodies
 
 // Health check route — useful for verifying server is alive
