@@ -43,7 +43,7 @@ function ChatPage() {
 
   const fetchProduct = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/products");
+      const response = await axios.get("https://ai-review-backend-qo8l.onrender.com/products");
       const found = response.data.products.find((p) => p._id === productId);
       if (!found) { navigate("/dashboard"); return; }
       setProduct(found);

@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://ai-review-backend-qo8l.onrender.com",
 });
 
 // i attach token to every request automatically

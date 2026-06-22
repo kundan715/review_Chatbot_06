@@ -24,7 +24,7 @@ function Dashboard() {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5000/products");
+      const response = await axios.get("https://ai-review-backend-qo8l.onrender.com/products");
       setProducts(response.data.products);
     } catch (err) {
       setError("failed to load products, please refresh");

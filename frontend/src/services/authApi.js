@@ -4,7 +4,7 @@ import axios from "axios";
 
 // i set base url here so i only change one place if backend url changes
 const API = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://ai-review-backend-qo8l.onrender.com",
 });
 
 // attach jwt token to every request automatically
