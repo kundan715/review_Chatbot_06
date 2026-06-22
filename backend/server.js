@@ -20,7 +20,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://review-chatbot-06.vercel.app/",
+  origin: "https://review-chatbot-06.vercel.app",
   credentials: true
 }));
 
